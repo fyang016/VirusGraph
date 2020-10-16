@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1B0E48D8705B85C336C4AE /* Pods_VirusGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565EFD71C01F93766AF3347B /* Pods_VirusGraph.framework */; };
+		4D489C762537737D00C6A281 /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D489C752537737D00C6A281 /* GraphTableViewCell.swift */; };
+		4D489C792537742D00C6A281 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D489C782537742D00C6A281 /* Formatter.swift */; };
 		4DE816DE25363CA100F7BFD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE816DD25363CA100F7BFD1 /* AppDelegate.swift */; };
 		4DE816E025363CA100F7BFD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE816DF25363CA100F7BFD1 /* SceneDelegate.swift */; };
 		4DE816E225363CA100F7BFD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE816E125363CA100F7BFD1 /* ViewController.swift */; };
 		4DE816E525363CA100F7BFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE816E325363CA100F7BFD1 /* Main.storyboard */; };
 		4DE816E725363CA300F7BFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE816E625363CA300F7BFD1 /* Assets.xcassets */; };
 		4DE816EA25363CA300F7BFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE816E825363CA300F7BFD1 /* LaunchScreen.storyboard */; };
+		4DE816F325364DAA00F7BFD1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE816F225364DAA00F7BFD1 /* Model.swift */; };
+		4DE816F625364DD600F7BFD1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE816F525364DD600F7BFD1 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D489C752537737D00C6A281 /* GraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
+		4D489C782537742D00C6A281 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		4DE816DA25363CA100F7BFD1 /* VirusGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirusGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE816DD25363CA100F7BFD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE816DF25363CA100F7BFD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		4DE816E625363CA300F7BFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE816E925363CA300F7BFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DE816EB25363CA300F7BFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE816F225364DAA00F7BFD1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4DE816F525364DD600F7BFD1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		565EFD71C01F93766AF3347B /* Pods_VirusGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirusGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E14B046CDAB3797433AD208 /* Pods-VirusGraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirusGraph.release.xcconfig"; path = "Target Support Files/Pods-VirusGraph/Pods-VirusGraph.release.xcconfig"; sourceTree = "<group>"; };
+		E30B6ECF35DA6DD94C6DE5EF /* Pods-VirusGraph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirusGraph.debug.xcconfig"; path = "Target Support Files/Pods-VirusGraph/Pods-VirusGraph.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1B0E48D8705B85C336C4AE /* Pods_VirusGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				4DE816DC25363CA100F7BFD1 /* VirusGraph */,
 				4DE816DB25363CA100F7BFD1 /* Products */,
+				7771C8E0403C2EB590AB5FDA /* Pods */,
+				9A074DB2F9CAC7C0FD62F619 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,33 @@
 				4DE816DD25363CA100F7BFD1 /* AppDelegate.swift */,
 				4DE816DF25363CA100F7BFD1 /* SceneDelegate.swift */,
 				4DE816E125363CA100F7BFD1 /* ViewController.swift */,
+				4DE816F525364DD600F7BFD1 /* ResultViewController.swift */,
+				4D489C782537742D00C6A281 /* Formatter.swift */,
+				4D489C752537737D00C6A281 /* GraphTableViewCell.swift */,
+				4DE816F225364DAA00F7BFD1 /* Model.swift */,
 				4DE816E325363CA100F7BFD1 /* Main.storyboard */,
 				4DE816E625363CA300F7BFD1 /* Assets.xcassets */,
 				4DE816E825363CA300F7BFD1 /* LaunchScreen.storyboard */,
 				4DE816EB25363CA300F7BFD1 /* Info.plist */,
 			);
 			path = VirusGraph;
+			sourceTree = "<group>";
+		};
+		7771C8E0403C2EB590AB5FDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30B6ECF35DA6DD94C6DE5EF /* Pods-VirusGraph.debug.xcconfig */,
+				6E14B046CDAB3797433AD208 /* Pods-VirusGraph.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A074DB2F9CAC7C0FD62F619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				565EFD71C01F93766AF3347B /* Pods_VirusGraph.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE816EE25363CA300F7BFD1 /* Build configuration list for PBXNativeTarget "VirusGraph" */;
 			buildPhases = (
+				D6955552B15C2D0784FF40E9 /* [CP] Check Pods Manifest.lock */,
 				4DE816D625363CA100F7BFD1 /* Sources */,
 				4DE816D725363CA100F7BFD1 /* Frameworks */,
 				4DE816D825363CA100F7BFD1 /* Resources */,
+				16E1132AB1BE51AF9E0DD68A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +170,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16E1132AB1BE51AF9E0DD68A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirusGraph/Pods-VirusGraph-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirusGraph/Pods-VirusGraph-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VirusGraph/Pods-VirusGraph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6955552B15C2D0784FF40E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirusGraph-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DE816D625363CA100F7BFD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D489C762537737D00C6A281 /* GraphTableViewCell.swift in Sources */,
+				4DE816F625364DD600F7BFD1 /* ResultViewController.swift in Sources */,
 				4DE816E225363CA100F7BFD1 /* ViewController.swift in Sources */,
+				4D489C792537742D00C6A281 /* Formatter.swift in Sources */,
 				4DE816DE25363CA100F7BFD1 /* AppDelegate.swift in Sources */,
 				4DE816E025363CA100F7BFD1 /* SceneDelegate.swift in Sources */,
+				4DE816F325364DAA00F7BFD1 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +367,7 @@
 		};
 		4DE816EF25363CA300F7BFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30B6ECF35DA6DD94C6DE5EF /* Pods-VirusGraph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +387,7 @@
 		};
 		4DE816F025363CA300F7BFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E14B046CDAB3797433AD208 /* Pods-VirusGraph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
